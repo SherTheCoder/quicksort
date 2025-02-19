@@ -12,8 +12,6 @@ public:
         }
     }
     int partition(vector<int>& nums, int p, int r){
-        int randomPivotIndex = rand()%(r-p) + p;
-        swap(nums[randomPivotIndex], nums[r]);
         int x = nums[r];
         int i = p - 1;
         for(int j  = p ; j <= r - 1; j++){
